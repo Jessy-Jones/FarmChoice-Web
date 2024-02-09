@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:400px) {
+
+    .splash{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 100%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        background-color:rgb(26, 117, 70) ;
+        transition: all ease-in-out 600ms;
+    }
+    .hidden{
+        transition: 0.5s;
+        display: none;
+    }
+    .splash__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(26, 117, 70);
+    } 
+}
+
