@@ -1,7 +1,4 @@
-const splashScreen = document.querySelector(".splash");
-splashScreen.addEventListener ('click', () => {
-    splashScreen.style.opacity = 0;
-    setTimeout(() => {
-        splashScreen.classList.add('hidden')
-    }, 610)
-})
+setTimeout(function() {
+    document.getElementById('splash__screen').style.display = 'none';
+    document.getElementById('login__or__signup').style.display = 'block';
+  }, 3000);

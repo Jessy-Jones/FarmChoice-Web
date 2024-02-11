@@ -4,27 +4,56 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width:400px) {
-
-    .splash{
+@media screen and (max-width:430px) {
+/* Splash Screen Styles */
+    #splash__screen{
         position: fixed;
-        top: 50%;
-        left: 50%;
-        height: 100%;
+        top: 0;
+        left: 0;
         width: 100%;
-        transform: translate(-50%, -50%);
-        background-color:rgb(26, 117, 70) ;
-        transition: all ease-in-out 600ms;
-    }
-    .hidden{
-        transition: 0.5s;
-        display: none;
-    }
-    .splash__item{
+        height: 100%;
+        background-color: rgb(26, 117, 70);
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+    #main__splash__item{
+        width: 90%;
+    
+    }
+    #seeds__splash__item{
+        position: absolute; 
+        bottom: 5px; 
+        right: 0px;
+        width: 30%;
+    }
+    #login__or__signup {
+        display: none; /* Initially hide the main content */
+      }
+
+      /* Login or signup screen */
+      #logo{
+        height: 60vh;
+        border: 1px solid wheat;
+        border-radius: 0px 0px 20px 20px;
+      }
+      #logo__login__signup{
+        width: 80%;
+        margin-left: 15%;
+        margin-top: 15%;
+      }
+      #multiple__seeds{
+        background: url("./images/farmchoice_seeds-removebg-preview.png");
+        width: 30%;
         
-    } 
+      }
+
+      #access{
+        height: 40vh;
+        background-color:rgb(26, 117, 70) ;
+      }
 }
 
